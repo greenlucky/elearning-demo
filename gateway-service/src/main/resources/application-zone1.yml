@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gateway-service
+  profiles: zone1
+eureka:
+  instance:
+    metadata-map:
+      zone: zone1
+server:
+  port: 8090
+
+

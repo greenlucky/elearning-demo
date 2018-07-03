@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: discovery-service
+  profiles:
+    active: peer1
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      zone1: http://localhost:8761/eureka/
+      zone2: http://127.0.0.1:8762/eureka/
+      zone3: http://127.0.0.1:8763/eureka/
+    availability-zones:
+      region-1: zone1,zone2
+      region-2: zone3

@@ -1,0 +1,14 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: discovery-service
+  profiles: peer3
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    metadata-map:
+      zone: zone3
+  client:
+    region: region-2
